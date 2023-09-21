@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@deno/mod.js';
+import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.0.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { get } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@deno/mod.js';
+import { get } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.0.1-deno/mod.js';
 ```
 
 #### defaults()
@@ -126,7 +126,7 @@ The setting `name` corresponds to a flattened object path. For example, the sett
 
 ```javascript
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
-import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@deno/mod.js';
+import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.0.1-deno/mod.js';
 
 var o = defaults();
 
