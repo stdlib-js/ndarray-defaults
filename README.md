@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@esm/index.mjs';
+import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { get } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@esm/index.mjs';
+import { get } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.1.1-esm/index.mjs';
 ```
 
 #### defaults()
@@ -131,7 +131,7 @@ The setting `name` corresponds to a flattened object path. For example, the sett
 <script type="module">
 
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
-import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@esm/index.mjs';
+import defaults from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@v0.1.1-esm/index.mjs';
 
 var o = defaults();
 
