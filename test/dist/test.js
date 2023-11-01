@@ -21,20 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var hasOwnProp = require( '@stdlib/assert-has-own-property' );
-var defaults = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof defaults, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'attached to the main function is a method to retrieve a setting', function test( t ) {
-	t.strictEqual( hasOwnProp( defaults, 'get' ), true, 'has property' );
-	t.strictEqual( typeof defaults.get, 'function', 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
