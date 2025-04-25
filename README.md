@@ -96,6 +96,10 @@ The returned object has the following properties:
     -   **signed_integer**: default signed integer data type.
     -   **unsigned_integer**: default unsigned integer data type.
     -   **boolean**: default boolean data type.
+    -   **index**: default index data type.
+    -   **integer_index**: default integer index data type.
+    -   **boolean_index**: default boolean index data type.
+    -   **mask_index**: default mask index data type.
 
 -   **order**: default memory layout.
 
@@ -225,7 +229,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
