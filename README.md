@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-defaults
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-defaults = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var defaults = require( 'path/to/vendor/umd/ndarray-defaults/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.defaults;
-})();
-</script>
+var defaults = require( '@stdlib/ndarray-defaults' );
 ```
 
 #### defaults()
@@ -102,6 +96,10 @@ The returned object has the following properties:
     -   **signed_integer**: default signed integer data type.
     -   **unsigned_integer**: default unsigned integer data type.
     -   **boolean**: default boolean data type.
+    -   **index**: default index data type.
+    -   **integer_index**: default integer index data type.
+    -   **boolean_index**: default boolean index data type.
+    -   **mask_index**: default mask index data type.
 
 -   **order**: default memory layout.
 
@@ -143,14 +141,9 @@ The setting `name` corresponds to a flattened object path. For example, the sett
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-defaults@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var array = require( '@stdlib/ndarray-array' );
+var defaults = require( '@stdlib/ndarray-defaults' );
 
 var o = defaults();
 
@@ -188,11 +181,6 @@ console.log( x.dtype );
 opts.dtype = o.dtypes.boolean;
 x = array( buf, opts );
 console.log( x.dtype );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -241,7 +229,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
